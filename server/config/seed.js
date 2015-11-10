@@ -10,6 +10,17 @@ var Thing = require('../api/thing/thing.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
+    name : 'FB',
+    info : 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
+  }, {
+    name : 'AMZN',
+    info : 'Built with a powerful and fun stack: MongoDB, Express, AngularJS, and Node.'
+  }, {
+    name : 'MA',
+    info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
+  });
+/*
+  Thing.create({
     name : 'Development Tools',
     info : 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
   }, {
@@ -28,4 +39,5 @@ Thing.find({}).remove(function() {
     name : 'Deployment Ready',
     info : 'Easily deploy your app to Heroku or Openshift with the heroku and openshift subgenerators'
   });
+  */
 });

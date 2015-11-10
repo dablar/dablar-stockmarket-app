@@ -6,7 +6,8 @@ angular.module('dablarStockmarketAppApp', [
   'ngSanitize',
   'ngRoute',
   'btford.socket-io',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'googlechart'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
